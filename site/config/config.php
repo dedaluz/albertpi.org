@@ -38,9 +38,15 @@ c::set('languages', array(
     'url'     => '/'
   ),
   array(
-    'name'    => 'Deutsch',
-    'code'    => 'de',
-    'locale'  => 'de_DE.utf-8',
-    'url'     => '/de'
+    'name'    => 'Español',
+    'code'    => 'es_ES',
+    'locale'  => 'es_ES.utf-8',
+    'url'     => '/es'
+  ),
+  array(
+    'name'    => 'Català',
+    'code'    => 'ca_ES',
+    'locale'  => 'ca_ES.utf-8',
+    'url'     => '/ca'
   )
 ));
