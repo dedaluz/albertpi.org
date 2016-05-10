@@ -1,0 +1,17 @@
+{
+  "name": "albertpi",
+  "description": "Albert Pi website",
+  "main": "gulpfile.js",
+  "authors": [
+    "Albert Pi <albertpi@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/dedaluz/albertpi.org",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
