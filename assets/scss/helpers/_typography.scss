@@ -1,0 +1,14 @@
+// Typography mixins
+// -----------------
+
+// Font weight
+// -----------
+@mixin fw($target, $map: $font-weights) {
+  font-weight: map-fetch($font-weights, $target);
+}
+
+// Font Family
+// -----------
+@mixin ff($family, $map: $font-families) {
+  font-family: map-get($map, $family);
+}

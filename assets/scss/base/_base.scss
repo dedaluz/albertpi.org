@@ -1,0 +1,73 @@
+// Theme base
+// ----------
+
+// Definition lists (From Lea's book, CSS Secrets)
+dt,
+dd {
+  display: inline;
+}
+
+dd + dt::before {
+  content: '\A';
+  white-space: pre;
+}
+
+dd + dd::before {
+  content: ', ';
+}
+
+// Intrinsic sizing on figure + Fallback
+figure {
+  // max-width: min-content;
+  margin: auto;
+  max-width: 100%;
+
+
+
+  > img {
+    display: block;
+    max-width: inherit;
+  }
+}
+
+// Adaptation of Lobotomized Owls Selector on p elements
+// http://alistapart.com/article/axiomatic-css-and-lobotomized-owls
+
+// p + p,
+// p + figure,
+// p + img,
+// figure + p,
+// img + p,
+p + *,
+* + p {
+  margin-top: vr(1);
+}
+
+h2 + p {
+  margin-top: vr(0.5);
+}
+
+h2 + figure {
+  margin-top: vr(1);
+}
+
+// Adds default UL and LI styles back ONLY for articles
+// Adds margin bottom of 1 rhythm to images ONLY for articles
+article {
+  ul,
+  ol {
+    padding-left: 2rem;
+  }
+
+  li + li {
+    margin-top: vr(0.25);
+  }
+
+  ul li {
+    list-style-type: disc;
+  }
+
+  ol li {
+    list-style-type: decimal;
+  }
+}

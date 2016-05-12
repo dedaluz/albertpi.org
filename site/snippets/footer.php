@@ -19,7 +19,7 @@
 
 <?php else: ?>
 
-<?= js('assets/production/all.min.js') ?>
+<?= js('assets/production/js/all.min.js') ?>
 
 <?php endif ?>
 

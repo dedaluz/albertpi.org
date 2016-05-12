@@ -85,6 +85,10 @@ gulp.task('sass', function() {
     .pipe(sourcemaps.init())
     .pipe(sass({
       //includePaths: ['app/bower_components', 'app/bower_components/foundation/scss'],
+      includePaths: [
+        'bower_components',
+        'node_modules'
+      ],
       errLogToConsole: true
       }))
     .pipe(postcss([
@@ -148,10 +152,10 @@ gulp.task('script-plugins', function() {
 gulp.task('scripts', ['script-plugins'], function (done) {
   return gulp.src(['assets/js/plugins.js'].concat(userScripts))
     .pipe(concat('all.js'))
-    .pipe(gulp.dest('assets/production'))
+    .pipe(gulp.dest('assets/production/js'))
     .pipe(rename('all.min.js'))
     .pipe(uglify())
-    .pipe(gulp.dest('assets/production'));
+    .pipe(gulp.dest('assets/production/js'));
 });
 
 

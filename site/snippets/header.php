@@ -12,11 +12,11 @@
 
   <?php if ( c::get('environment') == 'local' ) : ?>
 
-  <?php echo css('assets/css/main.css') ?>
+  <?php echo css('assets/css/styles.css') ?>
 
   <?php else: ?>
 
-  <?php echo css('assets/production/main.min.css') ?>
+  <?php echo css('assets/production/css/styles.min.css') ?>
 
   <?php endif ?>
 
